@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _add - adds the top two elements in stack
+ * add - adds the top two elements in stack
  * @h: top node
  * @line_number: node number
  */
@@ -19,7 +19,7 @@ void add(stack_t **h, unsigned int line_number)
 }
 
 /**
- * _sub - subtract second node from top node
+ * sub - subtract second node from top node
  * @h: top of list
  * @line_number: line of command
  */
@@ -37,7 +37,7 @@ void sub(stack_t **h, unsigned int line_number)
 }
 
 /**
- * _mul - multiply second node and top node
+ * mul - multiply second node and top node
  * @h: top of list
  * @line_number: line of command
  */
@@ -58,7 +58,7 @@ void mul(stack_t **h, unsigned int line_number)
  * @h: top of list
  * @line_number: line of command
  */
-void div(stack_t **h, unsigned int line_number)
+void _div(stack_t **h, unsigned int line_number)
 {
 	if (*h == NULL || (*h)->next == NULL)
 	{
@@ -76,7 +76,7 @@ void div(stack_t **h, unsigned int line_number)
 }
 
 /**
- * _mod - mod second node from top node
+ * mod - mod second node from top node
  * @h: top of list
  * @line_number: line of command
  */
